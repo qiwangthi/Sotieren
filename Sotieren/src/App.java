@@ -11,7 +11,8 @@ public class App {
             list.add((int) (Math.random() * 114) + 1900);
 
         }
-        System.out.println(list);
+        // System.out.println(list);
+        Ausgabe.liste(list);
         // startTimermethode aufrufen
 
     }

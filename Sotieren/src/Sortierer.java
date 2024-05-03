@@ -14,7 +14,7 @@ public abstract class Sortierer {
     }
 
     // getter Methode
-    public List<Integer> getliste() {
+    public List<Integer> getListe() {
         return liste;
     }
 
