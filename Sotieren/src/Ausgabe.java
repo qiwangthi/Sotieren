@@ -21,16 +21,24 @@ public class Ausgabe {
     // mergeSort
     public static void mergeSort() {
         System.out.println("Sortiert mit MergeSort");
-    //quickSort
+    }
+
+    // quickSort
     public static void quickSort() {
         System.out.println("Sortiert mit QuickSort");
-    //inserSort
-    public static void inserSort() {
+    }
+
+    // inserSort
+    public static void insertSort() {
         System.out.println("Sortiert mit InserSort");
-    //Rechenzeit 
-    /*Die Methode zeit erwartet einen long
-als Parameter, welcher die Rechenzeit in Millisekunden ausgibt. Die Methode gibt die Rechenzeit
-in Sekunden aus (z.B Benötigte Rechenzeit: 0.3s) */
+    }
+    // Rechenzeit
+    /*
+     * Die Methode zeit erwartet einen long
+     * als Parameter, welcher die Rechenzeit in Millisekunden ausgibt. Die Methode
+     * gibt die Rechenzeit
+     * in Sekunden aus (z.B Benötigte Rechenzeit: 0.3s)
+     */
 
     public static void zeit(long time) {
         System.out.println("Benötigte Rechenzeit: " + time + "s");
