@@ -22,5 +22,14 @@ public class App {
         Ausgabe.liste(sortedList);
         Ausgabe.zeit(insertSortierer.getOperations());
 
+        // methode von quickSortierer aufrufen
+        QuickSortierer quickSortierer = new QuickSortierer(years, 0, 0);
+        quickSortierer.startTimer();
+        ArrayList<Integer> sortedList2 = (ArrayList<Integer>) quickSortierer.sortiere();
+        quickSortierer.endTimer();
+
+        Ausgabe.liste(sortedList2);
+        Ausgabe.zeit(quickSortierer.getOperations());
+
     }
 }
