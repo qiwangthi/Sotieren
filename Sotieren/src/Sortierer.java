@@ -27,8 +27,8 @@ public abstract class Sortierer {
     }
 
     // startTime
-    public long startTimer() {
-        return this.startTime = System.currentTimeMillis();
+    public void startTimer() {
+        this.startTime = System.currentTimeMillis();
     }
 
     // copy list
@@ -40,12 +40,15 @@ public abstract class Sortierer {
     protected abstract List<Integer> sortiere(List<Integer> liste);
 
     public List<Integer> sortiere() {
-        return sortiere(this.liste);
+        startTimer();
+        List<Integer> List = sortiere(this.liste);
+        endTimer();
+        return List;
     }
 
     // endTime
-    public long endTimer() {
-        return this.endTime = System.currentTimeMillis();
+    public void endTimer() {
+        this.endTime = System.currentTimeMillis();
     }
 
     // differenz zwischen endTime und startTime
